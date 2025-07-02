@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int row,column;
+        for(row=1;row<=n;row++){
+            for(column=1;column<=n;column++){
+                if((row+column)%2==0){
+                    System.out.print("1");
+                }
+                else{
+                    System.out.print("0");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
