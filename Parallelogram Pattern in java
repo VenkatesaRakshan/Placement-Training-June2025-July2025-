@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int row,star,space;
+        for(row=1;row<=n;row++){
+            for(space=1;space<=n-row;space++){
+                System.out.print(" ");
+            }
+            for(star=1;star<=n;star++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
