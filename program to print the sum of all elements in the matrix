@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        int[][]a =new int[n][m];
+        int row,col,sum = 0;
+        for (row=0;row <n; row++) {
+            for (col=0; col<m;col++) {
+                a[row][col]=sc.nextInt();
+                sum+=a[row][col];
+            }
+        }
+        System.out.println("Sum of All Elements of the Matrix is "+sum);
+    }
+}
