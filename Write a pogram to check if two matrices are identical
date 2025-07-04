@@ -1,0 +1,135 @@
+HackerRank Home
+HackerRank
+|
+Prepare
+Certify
+Compete
+Apply
+Search
+ 
+All Contests  C-LEVEL0-MOD11-2D  C-L0-MOD11-Challenge1
+C-L0-MOD11-Challenge1
+Problem
+Submissions
+Leaderboard
+Discussions
+Submitted a minute ago • Score: 10.00Status: Accepted
+ Test Case #0
+ Test Case #1
+ Test Case #2
+ Test Case #3
+ Test Case #4
+ Test Case #5
+
+Submitted Code
+Language: Java 7
+
+ Open in editor
+1
+import java.io.*;
+2
+import java.util.*;
+3
+import java.text.*;
+4
+import java.math.*;
+5
+import java.util.regex.*;
+6
+​
+7
+public class Solution {
+8
+​
+9
+    public static void main(String[] args) {
+10
+        Scanner sc=new Scanner(System.in);
+11
+        int r1=sc.nextInt();
+12
+        int c1=sc.nextInt();
+13
+        int a[][]=new int[r1][c1];
+14
+        int row,col,flag=0;
+15
+        for(row=0;row<r1;row++){
+16
+            for(col=0;col<c1;col++){
+17
+                a[row][col]=sc.nextInt();
+18
+            }
+19
+        }
+20
+        int r2=sc.nextInt();
+21
+        int c2=sc.nextInt();
+22
+        int b[][]=new int[r2][c2];
+23
+        for(row=0;row<r2;row++){
+24
+            for(col=0;col<c2;col++){
+25
+                b[row][col]=sc.nextInt();
+26
+            }
+27
+        }
+28
+        if(r1==r2 && c1==c2){
+29
+            for(row=0;row<r2;row++){
+30
+                for(col=0;col<c2;col++){
+31
+                    if(b[row][col]!=a[row][col]){
+32
+                        flag=1;
+33
+                        break;
+34
+                    }
+35
+                 
+36
+                    }
+37
+                }
+38
+            } 
+39
+        else{      
+40
+            System.out.print("NOT IDENTICAL");
+41
+                        return ;
+42
+        }
+43
+        if(flag==0){
+44
+            System.out.println("IDENTICAL");
+45
+        }
+46
+        else{
+47
+            System.out.print("NOT IDENTICAL");
+48
+        }
+49
+        
+50
+        
+51
+        
+52
+    }
+53
+}
+Interview Prep | Blog | Scoring | Environment | FAQ | About Us | Support | Careers | Terms Of Service | Privacy Policy |
+
