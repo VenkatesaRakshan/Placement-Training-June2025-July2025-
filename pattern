@@ -1,0 +1,48 @@
+Star Pattern
+
+Sample Input 0
+
+5
+Sample Output 0
+
+1
+24
+135
+2468
+13579
+
+
+
+
+
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int row ,col;
+        for(row=1;row<=n;row++){
+            int count=0;
+            for(col=1;col<=row;col++){
+                if(row%2==1){
+                    int ans=(2*count)+1;
+                    System.out.print(ans);
+                    count++;
+                }
+                else{
+                    int ans=count+2;
+                    System.out.print(ans);
+                    count=count+2;
+                }
+            }
+            System.out.println();
+        }
+    }
+}
